@@ -5,19 +5,21 @@ This repo contains multiple files for running and testing the RSA encryption met
 ## Compilation
 
 Compile the program by running the following commands in the directory the .java files are in
-(make sure that RSA.java is also )
+(make sure that RSA.java is also in the directory)
 
 > javac RSAServer.java
+>
 > javac RSAClient.java
 
 ## Running
 
 Run the code by running the following commands in the same directory as the compiled code
 
-> Java RSAServer
-> Java RSAClient <\Hostname> <\Port Number>
+> java RSAServer
+>
+> java RSAClient <\Hostname> <\Port Number>
 
-If you are running both programs on the same machine, the Hostname will be localhost
+If you are running both programs on the same machine, the Hostname will be localhost.
 The Port Number is given by the Server program and is automatically assigned
 
 ## RSA
@@ -35,12 +37,13 @@ Multiple clients can connect without restarting the server, but only one at a ti
 The RSA Client takes in numbers from the user, encrypts them, and sends them to the server.
 Any positive number under 1,000,000 is safe to send, but higher numbers may be above N depending on the generated primes.
 There are no safeguards for user input, anything besides a number or Q will cause crashes.
+Entering Q instead of a number will close the client and allow the server to accept a new client.
 
 Current implementation requires command line arguments, inform me and I can change it to use runtime input instead.
 
 ## RSAUnitTest
 
-This is the set of Unit tests to prove the functionality of the helper functions.
+This is the set of Unit Tests to prove the functionality of the helper functions.
 Tests can be run in VSCode using the Test Runner for Java extension.
 This extension is included in the Extension Pack for Java.
 
