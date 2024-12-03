@@ -17,7 +17,7 @@ Run the code by running the following commands in the same directory as the comp
 
 > java RSAServer
 >
-> java RSAClient <\Hostname> <\Port Number>
+> java RSAClient <Hostname> <Port Number>
 
 If you are running both programs on the same machine, the Hostname will be localhost.
 The Port Number is given by the Server program and is automatically assigned
