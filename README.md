@@ -5,7 +5,7 @@ This repo contains multiple files for running and testing the RSA encryption met
 ## Compilation
 
 Compile the program by running the following commands in the directory the .java files are in
-(make sure that RSA.java is also in the directory)
+(make sure that RSA.java is also in the directory).
 
 > javac RSAServer.java
 >
@@ -13,18 +13,18 @@ Compile the program by running the following commands in the directory the .java
 
 ## Running
 
-Run the code by running the following commands in the same directory as the compiled code
+Run the code by running the following commands in the same directory as the compiled code.
 
 > java RSAServer
 >
-> java RSAClient <Hostname> <Port Number>
+> java RSAClient Hostname Port
 
 If you are running both programs on the same machine, the Hostname will be localhost.
-The Port Number is given by the Server program and is automatically assigned
+The Port number is given by the Server program and is automatically assigned.
 
 ## RSA
 
-RSA.java contains all of the helper functions for both the Server and Client
+RSA.java contains all of the helper functions for both the Server and Client.
 
 ## RSAServer
 
